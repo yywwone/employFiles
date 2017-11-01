@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var name = "test"
+    var test1 = {
+        name:"test1",
+        getName(){
+            return this.name
+        }
+    }
+    var test2 = {
+        name:"test2",
+        getName(){
+            return test1.getName()
+        }
+    }
+    var test3 = {
+        name:"test3",
+        getName(){
+            var getName = test1.getName
+            return getName()
+        }
+    }
+    var test4 = {
+        name:"test4",
+        getName:test1.getName
+    }
+    console.log(test1.getName());//test1
+
+    console.log(test2.getName());//test1
+    console.log(test3.getName());//test
+    console.log(test4.getName());//test4
+
+
+    var str='aabbccddeeff'
+console.log(str.substring(1,5));
+console.log(str.substr(1,5));
+</script>
+</html>

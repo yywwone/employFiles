@@ -1,0 +1,587 @@
+端口：设备与外界通讯交流的出口。
+
+接口：接口是计算机系统中两个独立的部件进行信息交换的共享边界。
+
+视口：视口是用来约束网站中最顶级块元素HTML的。
+
+网易nec：http://nec.netease.com/,提供WEB开发常见基础CSS样式。
+
+box-sizing:border-box;padding和border被包含在定义的width和height之内。对象的实际宽度就等于设置的width值，即使定义有border和padding也不会改变对象的实际宽度，即 ( Element width = width )
+
+width:auto;默认值。浏览器可计算出实际的宽度。
+
+display:flex;局部的伸缩样式,弹性布局,设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效
+
+伸缩容器的：
+1，flex-direction决定主轴的方向（即项目的排列方向）row(水平自左而右）row-reverse(自右而左） column（自上而下）column-reverse（自下而上）;
+
+2，flex-wrap :nowrap（默认）：不换行。wrap：换行，第一行在上方。wrap-reverse：换行，第一行在下方。
+
+3，justify-content:定义了项目在主轴上的对齐方式。
+@flex-start（默认值）：左对齐
+@flex-end：右对齐
+@center： 居中
+@space-between：两端对齐，项目之间的间隔都相等。
+@space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+
+4，align-items:单行（侧轴）对齐
+@flex-start：侧轴的起点对齐。
+@flex-end：侧轴的终点对齐。
+@center：侧轴的中点对齐。
+@baseline: 项目的第一行文字的基线对齐。
+@stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+
+5，align-content:多行（侧轴）对齐方式
+@flex-start：与交叉轴的起点对齐。
+@flex-end：与交叉轴的终点对齐。
+@center：与交叉轴的中点对齐。
+@space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。
+@space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
+@stretch（默认值）：轴线占满整个交叉轴
+
+
+6,align-self:属性定义flex子项单独在侧轴（纵轴）方向上的对齐方式。@auto 默认值。元素继承了它的父容器的 align-items 属性。如果没有父容器则为 "stretch"。
+@stretch 元素被拉伸以适应容器。
+@center 元素位于容器的中心。
+@flex-start 元素位于容器的开头。 
+@flex-end 元素位于容器的结尾。
+@baseline 元素位于容器的基线上。
+@initial 设置该属性为它的默认值 
+
+伸缩项目的：
+flex
+order:定义项目的排列顺序。数值越小，排列越靠前，默认为0，值相同，哪个写的前，哪个靠前。
+
+栅格化布局：整体的，本质是媒体查询，根据不同的媒体设置不同的布局；人为把屏幕分为12列；
+
+overflow:hidden;1，去除图片底边三像素；2，清除父元素里面所有浮动
+
+em:相对长度单位。相对于当前对象内文本（自身）的字体尺寸,em能适应更多的移动设备。
+
+rem:REM是相对单位，是相对HTML根元素font-size的大小（默认16px）。
+
+这个单位可谓集相对大小和绝对大小的优点于一身，通过它既可以做到只修改根元素就成比例地调整所有字体大小，又可以避免字体大小逐层复合的连锁反应。
+
+目前，除了IE8及更早版本外，所有浏览器均已支持rem。
+
+ios:是一个为网际互连优化的复杂的操作系统——类似一个局域操作系统,功能是为客户提供信息基础设施的保护等。
+
+动态网页：页面的内容和显示效果可以随着时间、环境或者数据库操作的结果而发生改变的。
+动态网页一般以数据库技术为基础，可以大大降低网站维护的工作量；
+采用动态网页技术的网站可以实现更多的功能；
+)动态网页实际上并不是独立存在于服务器上的网页文件，只有当用户请求时服务器才返回一个完整的网页；
+seo优化：搜索引擎优化，通过对网站进行站内优化和修复(网站Web结构调整、网站内容建设、网站代码优化和编码等)和站外优化，从而提高网站的网站关键词排名以及公司产品的曝光度。
+
+SEO是指在了解搜索引擎自然排名机制的基础之上，对网站进行内部及外部的调整优化，改进网站在搜索引擎中关键词的自然排名，获得更多的展现量，吸引更多目标客户点击访问网站，从而达到互联网营销及品牌建设的目标。
+
+addEventListener=true;addEventListener的第三个参数设置为true和false的区别已经非常清晰了：
+
+true表示该元素在事件的“捕获阶段”（由外往内传递时）响应事件；
+
+false表示该元素在事件的“冒泡阶段”（由内向外传递时）响应时间。
+
+
+attachEvent:将指定函数绑定到事件，以便每当该事件在对象上触发时都调用该函数。
+
+setInterval:定时器
+
+事件冒泡：当事件发生后，这个事件就要开始传播(从里到外或者从外向里)。事件源本身（可能）并没有处理事件的能力，即处理事件的函数（方法）并未绑定在该事件源上。例如我们点击一个按钮时，就会产生一个click事件，但这个按钮本身可能不能处理这个事件，事件必须从这个按钮传播出去，从而到达能够处理这个事件的代码中，或者按钮的父级绑定有事件函数，当该点击事件发生在按钮上，按钮本身并无处理事件函数，则传播到父级去处理。
+
+原型指向：
+
+什么是jQuery对象？
+---就是通过jQuery包装DOM对象后产生的对象。jQuery对象是jQuery独有的，其可以使用jQuery里的方法。
+
+
+jq转dom:jQuery对象转成DOM对象： 
+两种转换方式将一个jQuery对象转换成DOM对象：[index]和.get(index); 
+(1)jQuery对象是一个数据对象，可以通过[index]的方法，来得到相应的DOM对象。 
+如：var $v =$("#v") ; //jQuery对象 
+var v=$v[0]; //DOM对象 
+alert(v.checked) //检测这个checkbox是否被选中 
+(2)jQuery本身提供，通过.get(index)方法，得到相应的DOM对象 
+如：var $v=$("#v"); //jQuery对象 
+var v=$v.get(0); //DOM对象 
+alert(v.checked) //检测这个checkbox是否被选中 
+
+DOM对象转成jQuery对象: 
+对于已经是一个DOM对象，只需要用$()把DOM对象包装起来，就可以获得一个jQuery对象了。$(DOM对象) 
+
+
+冒泡排序旗舰版：
+
+虚拟机：虚拟机（Virtual Machine）指通过软件模拟的具有完整硬件系统功能的、运行在一个完全隔离环境中的完整计算机系统。
+
+虚拟系统通过生成现有操作系统的全新虚拟镜像，它具有真实windows系统完全一样的功能，进入虚拟系统后，所有操作都是在这个全新的独立的虚拟系统里面进行，可以独立安装运行软件，保存数据，拥有自己的独立桌面，不会对真正的系统产生任何影响 ，而且具有能够在现有系统与虚拟镜像之间灵活切换的一类操作系统。
+
+系统重装：
+
+二极管：
+
+响应式：一个网站能够兼容多个终端——而不是为每个终端做一个特定的版本。这个概念是为解决移动互联网浏览而诞生的。
+pc 平板 手机
+
+移动端：移动终端或者叫移动通信终端是指可以在移动中使用的计算机设备，广义的讲包括手机、笔记本、平板电脑、POS机甚至包括车载电脑。但是大部分情况下是指手机或者具有多种应用功能的智能手机以及平板电脑。
+pc端：
+
+hubilder:HBuilder是DCloud（数字天堂）推出的一款支持HTML5的Web开发IDE
+
+集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。
+
+伪元素：after before 写伪元素的样式时，必须要写content:"";
+/* .seckill-more 和after 是同一级还是 不同级
+    .seckill-more可以理解成after的父元素,但是实际上并不是
+
+    为什么after是叫伪元素呢? after不在真实的dom树上
+    通过之前用js获取元素的方法不能操作
+*/
+1.伪元素是什么时候有的
+         伪元素是ie6就有的 而且还是微软的ie首先用的 所以没有兼容性  以前叫伪类, 然后在css3中 因此进行了归类 把before和after归类到了伪元素
+2.:before和::before哪个好?
+其实在用的过程中 单冒号好   因为兼容性好
+
+dom树：DOM 节点树
+
+XML DOM 把 XML 文档视为一种树结构。这种树结构被称为节点树。[1]  
+
+可通过这棵树访问所有节点。可以修改或删除它们的内容，也可以创建新的元素。[1]  
+
+这颗节点树展示了节点的集合，以及它们之间的联系。这棵树从根节点开始，然后在树的最低层级向文本节点长出枝条：
+
+line-height: 1;设置数字，此数字会与当前的字体尺寸相乘来设置行间距。
+
+矢量图：矢量图形最大的优点是无论放大、缩小或旋转等不会失真；最大的缺点是难以表现色彩层次丰富的逼真图像效果。
+
+border-top-left-radius:左上角；
+
+vertical-align: middle;去除图片底端缝隙，还有display: block;
+
+text-decoration: line-through;穿过文本，即删除线
+text-decoration:none;去除下划线；
+
+Autoprefixer:解析CSS文件并且添加浏览器前缀到CSS规则里，使用Can I Use的数据来决定哪些前缀是需要的。
+Autoprefixer使用一个数据库根据当前浏览器的普及度以及属性支持提供给你前缀：
+
+comfile:编译
+
+单行注释：在查看less时不显示，
+
+多行注释：在查看less时显示。
+
+
+html5shiv.js：用于解决IE9以下版本浏览器对HTML5新增标签不识别，并导致CSS不起作用的问题。
+
+事件监听：3个事件阶段，依次是捕获阶段、目标阶段、冒泡阶段，
+
+委托：事件委托就是利用冒泡的原理，把事件加到父元素或祖先元素上，触发执行效果。
+
+绑定：http://www.jb51.net/article/93752.htm
+
+设计图：640px，750px
+
+项目开发流程：软件开发流程即软件设计思路和方法的一般过程，包括对软件先进行需求分析，设计软件的功能和实现的算法和方法、软件的总体结构设计和模块设计、编码和调试、程序联调和测试以及编写、提交程序等一系列操作以满足客户的需求并且解决客户的问题，如果有更高需求，还需要对软件进行维护、升级处理，报废处理。
+
+dpr:设备像素比DPR(devicePixelRatio)是默认缩放为100%的情况下，设备像素和CSS像素的比值
+DPR = 设备像素 / CSS像素(某一方向上)
+
+flexible.js:flexible.js轻松搞定各种不同的移动端设备兼容自适应问题。
+
+relative默认层级比absolute高：
+
+ps中：含有背景的图层可以使用快捷键删除，快捷键为:
+用背景色填充的整个图层 Ctrl+Del 
+用前景色填充的整个图层 Alt+Del
+
+bootstrap:Bootstrap 是基于 HTML、CSS、JavaScript 的,是一个CSS/HTML框架
+
+cutterman:Cutterman是一款运行在photoshop中的插件，能够自动将你需要的图层进行输出，
+
+-webkit-tap-highlight-color:-webkit-tap-highlight-color 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。 
+
+当用户点击iOS的Safari浏览器中的链接或JavaScript的可点击的元素时，覆盖显示的高亮颜色。
+
+该属性可以只设置透明度。如果未设置透明度，iOS Safari使用默认的透明度。当透明度设为0，则会禁用此属性；当透明度设为1，元素在点击时不可见。
+
+适用于：链接元素比如新窗口打开，img元素比如保存图像等等
+
+swipe.js:
+Swiper:
+Zepto:
+FastClick:是一个简单易用的库，可以消除click的物理点击和触发事件之间的300ms延迟。目的是应用程序更少的滞后和更快的响应，同时避免任何干扰当前的逻辑。解决点透和300ms延迟。
+flex:携程
+阮一峰伸缩布局
+
+
+
+
+startTime=new Date().getTime;获取当前时间。
+
+console.time(定时器的名字) 获取事件的开始时间    
+console.timeEnd(定时器的名字) 结束时间
+
+在手指一动的过程中,给move这个元素设置不同的颜色
+var colors = ['red', 'blue', 'green'];
+var key = 0;
+move.style.backgroundColor = colors[++key % colors.length];
+
+
+在第一个li前面添加最后一个li 在最后一个li后面添加第一个li
+      ul.appendChild(firstLi.cloneNode(true));
+      ul.insertBefore(lastLi.cloneNode(true),firstLi);
+
+用transitionEnd事件来监听索引：webkitTransitionEnd,当CSS 3的transition动画执行结束时，触发webkitTransitionEnd事件
+
+overflow-y: scroll;
+1,visible：不剪切内容。
+
+2,hidden：将超出对象高度的内容进行裁剪，将不出现滚动条。
+
+3,scroll：将超出对象高度的内容进行裁剪，并以滚动条的方式显示超出的内容。
+
+4,auto：在需要时剪切内容并添加滚动条，此为body对象和textarea的默认值。
+
+oninput:当元素获得用户输入时运行脚本
+
+模板引擎:type="text/template"
+
+art-template:artTemplate 是新一代 javascript 模板引擎，它采用预编译方式让性能有了质的飞跃;
+
+template-web:js框架，
+
+callback:回调函数，是一个通过函数指针调用的函数。如果你把函数的指针（地址）作为参数传递给另一个函数，当这个指针被用为调用它所指向的函数时，我们就说这是回调函数。回调函数不是由该函数的实现方直接调用，而是在特定的事件或条件发生时由另外的一方调用的，用于对该事件或条件进行响应.
+
+Failed to load:报错，不能跨域；加上dataType: "jsonp",
+
+<script type="text/template" id="tp">
+        {{ each result }}
+
+        <li> {{$value.word}}</li>
+        {{ /each }}
+    </script>
+
+
+
+
+-webkit：私有前缀，-moz,-o, -ms:www.caniuse
+
+Flexible实现手机淘宝h5页面的终端适配；
+
+//    var o = {
+//        a:10,
+//        b:{
+//            a:12,
+//            fn:function(){
+//                console.log(this.a); //undefined
+//                console.log(this); //window
+//            }
+//        }
+//    }
+//    var j = o.b.fn;
+//    j();
+
+
+    var o = {
+        a:10,
+        b:{
+             a:12,
+            fn:function(){
+                console.log(this.a); //12
+                console.log(this); //{ }
+            }
+        }
+    }
+    o.b.fn();
+
+transparent:透明
+
+跨域：jsonp:get;
+cors:post;
+
+clip:rect(0,0,0,0)剪切边
+
+rem:一定熟悉；rem怎么布局；
+
+sessionStorage 、localStorage 和 cookie 之间的区别
+
+BOM - 浏览器对象模型
+
+一套操作浏览器功能的API
+;
+DOM - 文档对象模型
+
+一套操作页面元素的API
+,DOM可以把HTML看做是文档树，通过DOM提供的API可以对树上的节点进行操作.
+
+ajax响应数据类型只能是json格式 
+ajax请求是异步的
+xhr .open("GET","ajax_info.txt",true);
+true（异步）或 false（同步）
+
+readyState:返回XMLHTTP请求的当前状态
+
+1 － （载入）已调用send()方法，正在发送请求
+2 － （载入完成）send()方法执行完成，已经接收到全部响应内容
+3 － （交互）正在解析响应内容
+4 － （完成）响应内容解析完成，可以在客户端调用了
+
+服务器端返回数据格式如下: 
+//返回的是xml格式
+//header("Content-Type:text/xml;charset=utf-8");
+//返回的是text格式
+header("Content-Type:text/html;charset=utf-8");
+//禁用缓存,是为了数据一样的前提下还能正常提交，而不是缓存数据
+header("Cache-Control:no-cache");
+
+
+element.addEventListener(event, function, useCapture)
+
+true - 事件句柄在捕获阶段执行
+false- false- 默认。事件句柄在冒泡阶段执行
+不能冒泡的事件（blur 、 focus 、等）
+
+
+addEventListener  和  attachEvent  的区别？
+一、addEventListener和attachEvent的兼容性问题
+?addEventListener是符合W3C规范的事件绑定方法，FireFox、Chrome、Safari都是用它来绑定事件。
+?attachEvent是IE私有的，不符合W3C规范，而且在IE下，只能使用它来绑定事件，addEventListener是无效的。
+所以，要想绑定事件，必须处理兼容性问题
+
+二、addEventListener和attachEvent的语法规则；
+addEventListener共有3个参数：
+1，element 要绑定事件的对象，及HTML节点。 
+2，type 事件名称，注意去掉事件前边的“on”，比如“onclick”要,写成“click”，“onmouseover”要写成“mouseover”。 
+3，listener 要绑定的事件监听函数，注意只写函数名，不要带括号。 
+4，userCapture 事件监听方式，只能是true和false：true，采用capture(捕获)模式；false，采用bubbling(冒泡)模式。如无特殊要求，一般是false。 
+
+attachEvent共有2个参数：
+1，element 要绑定事件的对象，及HTML节点。 2，type 事件名称，注意加上事件前边的“on”，比如“onclick”和“onmouseover”，这是与addEventListener的区别。 
+3，listener 要绑定的事件监听函数，注意只写函数名，不要带括号。 
+
+三、代码兼容处理
+function regEvent(ele, event_name, fun)
+ {
+     if (window.attachEvent) 
+         ele.attachEvent(event_name, fun);  //IE浏览器
+    else
+     {
+         event_name = event_name.replace(/^on/, “”);   //如果on开头，删除on，如onclick->click
+         ele.addEventListener(event_name, fun, false);  //非IE浏览器
+    }
+ }
+
+
+跨域解决方案 
+JSON with Padding(JSONP)，是一种解决跨域的方案。
+window.postMessage()
+CORS
+document.domain + iframe 
+动态创建script
+location.hash + iframe
+window.name + iframe
+web sockets
+详细链接地址 http://blog.csdn.net/joyhen/article/details/21631833
+
+
+FormData
+ 提供了一个新的内建对象，可用于管理表单数据
+ 首先要获取一个表单元素form
+ 然后在实例化时 new FormData(form)，将表单元素form传进去
+ 会返回一个对象，此对象可以直接做为xhr.send(formData)的参数
+ 此时我们的数据就是以二进制形式传递了
+ 注意我们这里只能以post形式传递，浏览器会自动为我们设置一个合适的请求头
+
+
+cookie机制采用的是在客户端保持状态的方案，而session机制采用的是在服务器端保持状态的方案.
+在Javascript中通过document.cookie进行读取和设置，并且是以固定格式字符串形式存在的，需要手工进行解析.
+Session 存储在服务端的数据，记录客户端的访问状态。以PHP为例，操作session启session   session_start()      $_SESSION[‘设定的字段’] = 赋值.
+cookie 和session 的区别：
+
+1、cookie数据存放在客户的浏览器上，session数据放在服务器上。
+
+2、cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗
+   考虑到安全应当使用session。
+
+3、session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能
+   考虑到减轻服务器性能方面，应当使用COOKIE。
+
+4、单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。
+
+5、所以个人建议：
+   将登陆信息等重要信息存放为SESSION
+   其他信息如果需要保留，可以放在COOKIE中
+
+
+字符串处理函数
+字符串查找( 重点 )
+        substr, substr_count, substr_replace, strstr, stristr, strpos, strrpos
+分割( 重点 )
+ explode:将字符串拆成数组,
+implode:将数组拼凑成字符串；
+ strtok
+解析 url
+        parse_url
+字符串比较
+        strcmp, strcasecmp
+删除字符串中的首尾空白
+        ltrim, rtrim, trim
+修改字符串大小写
+        strtolower, strtoupper, ucfirst, ucwords
+
+
+PHP的resource类型:mysql_connect();mysql_query();
+资源 resource 是一种特殊变量，保存了到外部资源的一个引用。资源是通过专门的函数来建立和使用的。
+
+
+单引号&双引号区别:
+在 PHP 中 双引号的字符串具有变量解析功能, 而单引号字符串没有、在书写字符串的时候, 如果字符串里面含有 $+名字, 那么 php 引擎会将其作为求值运算，将变量的值取出来.
+ 双引号的字符串有较为全面的转义字符, 单引号的字符串很多没有转义.
+
+
+include、include_once、require、require_once
+1、include：
+载入文件。未找到文件，则产生 E_WARNING 级别的警告错误，脚本继续运行。
+2、include_once：
+与include 语句作用相同，区别只是如果该文件已经被包含过，则不会再次包含。
+3、require：
+载入文件。未找到文件，则产生 E_COMPILE_ERROR级别的致命错误，脚本中止执行。
+4、require_once：
+与require 语句作用相同，区别只是如果该文件已经被包含过，则不会再次包含。
+5，include和require的区别：
+前者加载失败，脚本继续运行，后者加载失败，脚本终止运行。
+
+
+POST和GET有什么区别？
+
+method 可以用于设置表单提交的方式，目前我们所认识的就是最常见两种表单提交方式： GET 和 POST 。
+从效果上来看，两者都可以将数据提交到服务端，但是从实现提交的原理上两者有很大的不同：
+GET
+
+表单数据是通过 URL 中的 ? 参数传递到服务端的 可以在地址栏中看到提交的内容 数据长度有限制，因为 URL 地址长度有限（2000个字符） 
+
+POST
+
+表单数据是通过请求体传递到服务端的，我们在界面上看不到 可以提交任何类型的数据，包括文件 由于界面上看不见，浏览器也不储存，所以更安全
+至于什么情况下应该选用哪种方式，这个需要结合业务场景和这两种方式各自的特点来决定，没有绝对的答案，只 能给出一些原则：
+绝不能使用 GET 来发送密码或其他敏感信息！！！ 应该想清楚这次请求到底主要是去拿东西，还是去送东西
+
+
+媒体查询中js获取屏幕的宽度；
+document.body.clientWidth。
+
+
+jQuery-2.x.x.js,移动端框架
+
+真机调试：ngrock:不能调试js;ghostlab:可以调试js,但是要求网络必须是一样的；
+ngrok 为了让开发者开发得页面 在不同得网络中 也能让人访问  调试不了js
+
+  ghostlab 可以实时调试js 但是要求网络必须是一样的
+
+
+
+less.js:
+
+Flexible   淘宝 天猫适配都用它 经过了双11 之后 经历考验
+
+   之前适配各个设备 媒体查询得自己写 使用了 Flexible 之后 就不需要我们写了
+
+   这是大家都用到 
+;
+元素的尺寸*rem/设计图的宽
+rem单位不适合用在字体上
+
+response.js:媒体查询
+html5shiv.js:兼容html5标签
+
+inline-block有一个默认间距，给父元素font-size:0；
+
+
+两端对齐：
+ p {
+      text-align: justify;
+      height: 10000px;
+    }
+
+    /* 小技巧 */
+    p:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+    }
+text-align属性取值如下表：
+
+1，left ,默认值，左对齐
+2，center 居中对齐 
+3，right 右对齐 
+4，justify 两端对齐 
+
+小三角：
+ .box {
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #ff0000;
+    }
+box-shadow：inset;inset是从元素侧边进行投影,但是只渲染盒子内部的,丢弃外部的阴影而已.默认不写是外部阴影
+
+
+small：行内元素<small>
+<small> 标签告诉浏览器把其中的文本表示为小字号的内容
+用法：以<small>；开始标签开头以</small>；闭合标签结尾
+
+京东移动端和bootstrapt;
+
+
+1.遍历对象中的属性；
+        //利用for...in...循环遍历;因为for...in...不要想指定次数；
+    for(var i in obj){
+        console.log(i);//obj中的属性；
+        console.log(obj[i]);//obj中i属性对应的属性值；
+        console.log("-----");
+    }
+
+
+overflow: hidden;
+overflow: auto;
+visibility: hidden;
+
+
+形参也是局部变量;简单数据类型：全局变量想要修改,直接修改，不要进行参数传递；
+传递过去，外部变量也不会被修改，因为简单数据类型传值；
+复杂数据类型：值传递的时候，要注意，传递的是地址，一个被修改，另一个也会同步修改；
+如果不想让一个对象被修改，赋值前，要重新开辟空间保存；
+
+Math.PI	:圆周率
+Math.random():生成随机数;[0,1);能取0，不能取1；(包左不包右);Math.floor()/Math.ceil():向下取整/向上取整
+Math.round():取整，四舍五入
+Math.abs():绝对值
+Math.max()/Math.min():求最大和最小值
+//Math.sin()/Math.cos():正弦/余弦
+Math.power()/Math.sqrt():求指数次幂/求平方根//
+
+
+var date = new Date();获取当前时间；
+date.getDate();获取日 1-31
+date.getDay ();//获取星期 0-6（0代表周日）
+date.getMonth ();//获取月 0-11（1月从0开始,要+1）
+date.getFullYear ();//获取完整年份（浏览器都支持）
+date.getHours ();//获取小时 0-23
+date.getMinutes ();//获取分钟 0-59
+date.getSeconds ();//获取秒  0-59
+date.getMilliseconds();//获取毫秒 （1s = 1000ms）
+date.getTime ();//返回累计毫秒数(从1970/1/1午夜)
+
+bgColor：backgroundColor;
+bgcolor 是标签body的属性，比如p标签用bgcolor就没有作用，它需要用css，<p style='background-color:red'>才可以设置背景颜色
+
+document.body.style.backgroundColor=str;
+document.body.bgColor = str;
+
+触屏轮播图急点bug：
+
+伪数组和数组的区别: 不能调用数组的方法;
+但是能够调用数组的属性，和遍历及获取值和赋值；
+
+to(Locale)UpperCase() 	//转换大写
+to(Locale)LowerCase() 	//转换小写
